@@ -18,20 +18,107 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="main">
         <header id="header">
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item-blank"><a href="">Vào cửa hàng trên ứng dụng F8 shop</a></li>
-                        <li class="header__navbar-item">Kết nối<a href=""></a></li>
+                        <li class="header__navbar-item header__navbar-item-blank header__navbar-item--show">
+                            Vào cửa hàng trên ứng dụng F8 shop
+                            <div class="header__qr">
+                                <img class="header__qr-img full-width" src="./assets/img/download_qr/qr_code.png" alt="QR Code">
+                                <div class="header__qr-app full-width">
+                                    <a class="header__qr-app-link" href=""><img src="./assets/img/download_qr/app_store.png" alt="App Store"></a>
+                                    <a class="header__qr-app-link" href=""><img src="./assets/img/download_qr/gg_play.png" alt="Google Play"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            Kết nối
+                            <a href="https://facebook.com/ShopeeVN">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/Shopee_VN">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item"><a href="">Thông báo</a></li>
-                        <li class="header__navbar-item"><a href="">Trợ giúp</a></li>
-                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item-blank"><a href="">Đăng ký</a></li>
-                        <li class="header__navbar-item header__navbar-item--bold"><a href="">Đăng nhập</a></li>
+                        <li class="header__navbar-item">
+                            <a href="">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Các thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-list-item">
+                                        <a class="header__notify-link" href="">
+                                            <img class="header__notify-img" src="./assets/img/notification/Nofication_img.png" alt="IMG">
+                                            <div class="header__notify-body">
+                                                <p class="header__notify-name">Tên sản Phẩm</p>
+                                                <p class="header__notify-description">Mô tả Sản Phẩm</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-list-item">
+                                        <a class="header__notify-link" href="">
+                                            <img class="header__notify-img" src="./assets/img/notification/Nofication_img.png" alt="IMG">
+                                            <div class="header__notify-body">
+                                                <p class="header__notify-name">Tên sản Phẩm</p>
+                                                <p class="header__notify-description">Mô tả Sản Phẩm</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-list-item">
+                                        <a class="header__notify-link" href="">
+                                            <img class="header__notify-img" src="./assets/img/notification/Nofication_img.png" alt="IMG">
+                                            <div class="header__notify-body">
+                                                <p class="header__notify-name">Tên sản Phẩm</p>
+                                                <p class="header__notify-description">Mô tả Sản Phẩm</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-list-item">
+                                        <a class="header__notify-link" href="">
+                                            <img class="header__notify-img" src="./assets/img/notification/Nofication_img.png" alt="IMG">
+                                            <div class="header__notify-body">
+                                                <p class="header__notify-name">Tên sản Phẩm</p>
+                                                <p class="header__notify-description">Mô tả Sản Phẩm</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-list-item">
+                                        <a class="header__notify-link" href="">
+                                            <img class="header__notify-img" src="./assets/img/notification/Nofication_img.png" alt="IMG">
+                                            <div class="header__notify-body">
+                                                <p class="header__notify-name">Tên sản Phẩm</p>
+                                                <p class="header__notify-description">Mô tả Sản PhẩmMô tả Sản PhẩmMô tả Sản PhẩmMô tả Sản PhẩmMô tả Sản PhẩmMô tả Sản PhẩmMô tả Sản PhẩmMô tả Sản Phẩm</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="">Xem thêm</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item-blank">
+                            <a href="">Đăng ký</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold">
+                            <a href="">Đăng nhập</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -40,7 +127,7 @@
 
         </div>
         <footer id="footer">
-            
+
         </footer>
     </div>
 </body>

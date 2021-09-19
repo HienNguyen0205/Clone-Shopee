@@ -1,5 +1,5 @@
 :root{
-    --while-color: #fff;
+    --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
 }
@@ -23,4 +23,12 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+}
+/* Animation */
+@keyframes FadeIn{
+    from{
+        opacity: 0.5;
+    }to{
+        opacity: 1;
+    }
 }
