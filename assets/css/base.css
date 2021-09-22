@@ -5,6 +5,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 *{
     box-sizing: inherit;
@@ -50,16 +51,13 @@ a{
     bottom: 0;
 }
 .modal__body{
+    position: relative;
     margin: auto;
     width: 400px;
     height: 500px;
     background-color: var(--white-color);
     z-index: 1;
     border-radius: 2px;
-}
-.modal__inner{
-    position: relative;
-    height: 100%;
 }
 .modal::before{
     content:"";
@@ -69,53 +67,15 @@ a{
     height: 100%;
     background-color: rgba(0,0,0,0.3);
 }
-.auth__form{
-    margin: 0 24px;
-}
-.auth__form-header{
-    display: flex;
-    justify-content: space-between;
-}
-.auth__form-header h3,p{
-    display: inline-block;
-    align-self: center;
-}
-.auth__form-header h3{
-    padding-left: 8px;
-    font-size: 2rem;
-    font-weight: 500;
-}
-.auth__form-header p{
-    padding-right: 8px;
+/* Button Style */
+.btn{
+    min-width: 142px;
+    height: 36px;
     font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--third-color);
+    border: none;
+    border-radius: 3px;
 }
-.auth__form-form{
-    margin-top: 24px;
-    margin-bottom: 12px;
-}
-.auth__form-group{
-    margin: 16px 0;
-}
-.auth__form-input{
-    padding: 8px;
-    width: 100%;
-}
-.auth__form-policy{
-    font-size: 1.1rem;
-    padding: 0 8px ;
-    text-align: center;
-}
-.auth__form-policy a{
-    color: var(--third-color);
-}
-.auth__form-socials{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: var(--secondary-color);
-}
-.auth__form-socials .btn{
-
+.btn-primary{
+    color: var(--white-color);
+    background-color: var(--third-color);
 }
