@@ -227,13 +227,45 @@
 .auth__form-control{
     position: absolute;
     right: 0;
-    bottom: 32px;
+    bottom: 70px;
+}
+.auth__form-control .btn{
+    text-transform: uppercase;
 }
 .auth__form-socials{
+    display: flex;
     position: absolute;
-    display:block;
+    width: 100%;
     line-height: 32px;
-    margin: 0 24px;
+    padding: 0 24px;
     bottom: 0;
-    background-color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.auth__form-social-btn{
+    display: inline-flex;
+    flex: 1;
+}
+.auth__form-social-btn .btn{
+    margin: 8px 0;
+    border-radius: 2px;
+    flex: 1;
+}
+.auth__form-social-btn .fa-btn{
+    background-color: var(--four-color);
+    color: var(--white-color);
+    margin-right: 4px;
+}
+.auth__form-social-btn .google-btn{
+    margin-left: 4px;
+}
+.auth__form-social-btn i{
+    padding: 4px;
+    font-size: 1.8rem;
+}
+.auth__form-social-btn span{
+    padding: 0 4px;
+    font-size: 1.3rem;
+}
+.btn-return:hover{
+    background-color: rgba(0, 0, 0, 0.05);
 }
