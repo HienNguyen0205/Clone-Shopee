@@ -7,6 +7,9 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
+    --navbar-height: 43px;
+    --header-height: 120px;
+    --header-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 *{
     box-sizing: inherit;
@@ -29,6 +32,15 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
+.blank::after{
+    content:"";
+    display: block;
+    height: 16px;
+    border-left: 1px solid #F96D5C;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
 a{
     color: var(--text-color);
     text-decoration: none;
@@ -42,6 +54,13 @@ a{
         
     }
 }
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }to{
+        transform: scale(var(--growth-to));
+    }
+}
 /* Modal */
 .modal{
     position: fixed;
@@ -50,6 +69,7 @@ a{
     right: 0;
     left: 0;
     bottom: 0;
+    animation: FadeIn linear 0.1s;
 }
 .modal__body{
     position: relative;
@@ -59,6 +79,9 @@ a{
     background-color: var(--white-color);
     z-index: 1;
     border-radius: 2px;
+    --growth-from: 0.7;
+    --growth-to: 1;
+    animation: growth ease-in 0.1s;
 }
 .modal::before{
     content:"";

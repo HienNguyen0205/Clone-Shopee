@@ -1,9 +1,10 @@
 #header{
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #F53D2D, #F7452E);
 }
 .header__navbar{
     display: flex;
+    height: var(--navbar-height);
     justify-content: space-between;
 }
 .header__navbar-list{
@@ -144,15 +145,6 @@
 .header__notify-read{
     background-color: var(--primary-color);
 }
-.header__navbar-item-blank::after{
-    content:"";
-    display: block;
-    height: 16px;
-    border-left: 1px solid #F96D5C;
-    position: absolute;
-    top: 7px;
-    right: 0;
-}
 .header__navbar-item--show:hover .header__qr{
     display: block;
 }
@@ -268,4 +260,76 @@
 }
 .btn-return:hover{
     background-color: rgba(0, 0, 0, 0.05);
+}
+.auth__form-aside.login-form{
+    display: flex;
+    justify-content: flex-end;
+}
+.auth__form-help{
+    font-size: 1.2rem;
+}
+.auth__form-help:first-child{
+    color: var(--third-color);
+}
+.login-form span{
+    display: block;
+    border-left: 1px solid var(--black-color);
+    margin: 0 8px;
+}
+.header__search-container{
+    height: var(--header-search-height);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+.header__logo-container{
+    width: 200px;
+}
+.header__logo{
+    width: 150px;
+}
+.header__search-bar{
+    display: flex;
+    flex: 1;
+    height:40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+.header__search-bar-input{
+    flex: 1;
+    font-size: 1.4rem;
+    padding: 12px;
+    outline: none;
+    border-radius: 2px;
+    border-style: hidden;
+}
+.search-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 3px 3px 0;
+    width: 60px;
+    border-radius: 2px;
+    border-style: hidden;
+    background-color: var(--third-color);
+}
+.search-icon{
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+.header__cart{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+.header__cart i{
+    font-size: 2.4rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.search-icon-container:hover{
+    background-color: #e66f57;
+    cursor: pointer;
 }
