@@ -17,12 +17,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.ico" />
 </head>
 
 <body>
     <div id="main">
         <header id="header">
             <div class="grid">
+                <!-- NavBar -->
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item blank">
@@ -33,6 +35,7 @@
                         </li>
                         <li class="header__navbar-item blank header__navbar-item--show">
                             Tải ứng dụng
+                            <!-- QR Image -->
                             <div class="header__qr">
                                 <img class="header__qr-img grid__full-width" src="./assets/img/download_qr/qr_code.png"
                                     alt="QR Code">
@@ -129,11 +132,22 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--bold blank">
+                        <!-- <li class="header__navbar-item header__navbar-item--bold blank">
                             <a href="">Đăng ký</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--bold">
                             <a href="">Đăng nhập</a>
+                        </li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img class="header__navbar-avatar" src="./assets/img/Avatar/Avatar.jpg" alt="IMG">
+                            <span class="header__navbar-username">Nguyễn Công Hiền</span>
+                            <div class="user-options">
+                                <ul class="user-option-list">
+                                    <li class="user-option-list-item"><a href="">Tài khoản của tôi</a></li>
+                                    <li class="user-option-list-item"><a href="">Đơn mua</a></li>
+                                    <li class="user-option-list-item"><a href="">Đơn xuất</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -192,6 +206,13 @@
                                 <div class="header__cart-container--hasProduce">
                                     <h4 class="header__cart-heading">Sản phẩm mới thêm</h4>
                                     <ul class="header__cart-list">
+                                        <li class="header__cart-item">
+                                            <a class="header__cart-item-link" href="">
+                                                <img class="header__cart-item-img" src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
+                                                <span class="header__cart-item-decription">Bông tẩy trang</span>
+                                                <span class="header__cart-item-price">20.500đ</span>
+                                            </a>
+                                        </li>
                                         <li class="header__cart-item">
                                             <a class="header__cart-item-link" href="">
                                                 <img class="header__cart-item-img" src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
