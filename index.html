@@ -11,6 +11,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -145,7 +148,7 @@
                                 <ul class="user-option-list">
                                     <li class="user-option-list-item"><a href="">Tài khoản của tôi</a></li>
                                     <li class="user-option-list-item"><a href="">Đơn mua</a></li>
-                                    <li class="user-option-list-item"><a href="">Đơn xuất</a></li>
+                                    <li class="user-option-list-item"><a href="">Đăng xuất</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -208,28 +211,32 @@
                                     <ul class="header__cart-list">
                                         <li class="header__cart-item">
                                             <a class="header__cart-item-link" href="">
-                                                <img class="header__cart-item-img" src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
+                                                <img class="header__cart-item-img"
+                                                    src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
                                                 <span class="header__cart-item-decription">Bông tẩy trang</span>
                                                 <span class="header__cart-item-price">20.500đ</span>
                                             </a>
                                         </li>
                                         <li class="header__cart-item">
                                             <a class="header__cart-item-link" href="">
-                                                <img class="header__cart-item-img" src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
+                                                <img class="header__cart-item-img"
+                                                    src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
                                                 <span class="header__cart-item-decription">Bông tẩy trang</span>
                                                 <span class="header__cart-item-price">20.500đ</span>
                                             </a>
                                         </li>
                                         <li class="header__cart-item">
                                             <a class="header__cart-item-link" href="">
-                                                <img class="header__cart-item-img" src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
+                                                <img class="header__cart-item-img"
+                                                    src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
                                                 <span class="header__cart-item-decription">Bông tẩy trang</span>
                                                 <span class="header__cart-item-price">20.500đ</span>
                                             </a>
                                         </li>
                                         <li class="header__cart-item">
                                             <a class="header__cart-item-link" href="">
-                                                <img class="header__cart-item-img" src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
+                                                <img class="header__cart-item-img"
+                                                    src="./assets/img/cart/Bông_tẩy_trang.jpeg" alt="IMG">
                                                 <span class="header__cart-item-decription">Bông tẩy trang</span>
                                                 <span class="header__cart-item-price">20.500đ</span>
                                             </a>
@@ -245,8 +252,70 @@
                 </div>
             </div>
         </header>
-        <div id="container">
-
+        <div id="main__container">
+            <div class="grid">
+                <div class="grid__row content-container">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="category-heading-icon fas fa-list"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--selected">
+                                    <a class="category-item-link" href="">Sản phẩm mới</a>
+                                </li>
+                                <li class="category-item">
+                                    <a class="category-item-link" href="">BEST SELLER</a>
+                                </li>
+                                <li class="category-item">
+                                    <a class="category-item-link" href="">Dưỡng ẩm, Phục hồi da dầu, da mụn</a>
+                                </li>
+                                <li class="category-item">
+                                    <a class="category-item-link" href="">Chống nắng bảo vệ da khỏi tia UVA/UVB</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="main-sort">
+                            <div class="main-sort-wrap">
+                                <span class="main-sort-heading">Sắp xếp theo</span>
+                                <button class="btn main-sort-btn btn-primary">Phổ biến</button>
+                                <button class="btn main-sort-btn">Mới nhất</button>
+                                <button class="btn main-sort-btn">Bán chạy</button>
+                                <span class="price-sort">
+                                    <span>Giá</span>
+                                    <i class="price-sort-icon fas fa-chevron-down"></i>
+                                    <div class="price-sort-option">
+                                        <ul class="price-sort-list">
+                                            <li class="price-sort-item">
+                                                <a class="price-sort-item-link" href="">Giá: Thấp đến cao</a>
+                                            </li>
+                                            <li class="price-sort-item">
+                                                <a class="price-sort-item-link" href="">Giá: Cao đến thấp</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="page-number">
+                                <div class="page-number-wrap">
+                                    <span class="current-page">1</span>/14
+                                </div>
+                                <span class="nevigation-arrow">
+                                    <a class="nevigation-arrow-link page-reach-limit" href="">
+                                        <i class="page-number-icon fas fa-chevron-left"></i>
+                                    </a>
+                                    <a class="nevigation-arrow-link" href="">
+                                        <i class="page-number-icon fas fa-chevron-right"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer id="footer">
 
