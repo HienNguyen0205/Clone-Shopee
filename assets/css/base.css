@@ -80,6 +80,10 @@ ul{
     text-align: center;
     line-height: var(--height);
 }
+.pagination--limited{
+    opacity: 0.5;
+    cursor: default;
+}
 .page-number-item--active:hover .pagination-link{
     background-color: #F05D40;
 }
