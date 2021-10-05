@@ -1,7 +1,7 @@
 :root{
     --primary-color: rgba(246, 65, 45, 0.1);
     --secondary-color: rgba(181, 241, 244,0.5);
-    --third-color: #EE4D2D;
+    --third-color: #ee4d2d;
     --four-color: #2D88FF;
     --white-color: #fff;
     --black-color: #000;
@@ -51,4 +51,39 @@ ul{
 .btn-primary{
     color: var(--white-color);
     background-color: var(--third-color);
+}
+/* Pagination */
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+}
+.pagination-list{
+    display: flex;
+}
+.pagination-item{
+    margin: 0 12px;
+    border-radius: 2px;
+}
+.page-number-item--active .pagination-link{
+    background-color: var(--third-color);
+    color: var(--white-color);
+    border-radius: 2px;
+}
+.pagination-link{
+    --height: 30px;
+    display: block;
+    min-width: 40px;
+    height: var(--height);
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    line-height: var(--height);
+}
+.page-number-item--active:hover .pagination-link{
+    background-color: #F05D40;
+}
+/* Icon */
+.facebook-icon{
+    color: #149FF9;
 }

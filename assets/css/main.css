@@ -260,7 +260,7 @@
     position: absolute;
     top: calc(100% + 10px);
     right: -4px;
-    min-height: 250px;
+    min-height: 48px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0 , 26%);
     display: none;
     border-radius: 2px;
@@ -319,6 +319,10 @@
     font-weight: 300;
     color: #929292;
 }
+.header__cart-list{
+    max-height: 290px;
+    overflow: hidden;
+}
 .header__cart-item{
     padding: 0 8px 8px 0;
 }
@@ -342,7 +346,7 @@
 }
 .cart-btn{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     padding: 0 8px 8px 0;
 }
 .search-icon-container:hover{
@@ -493,6 +497,7 @@
     left: 0;
     background-color: var(--white-color);
     width: 100%;
+    z-index: 1;
 }
 .price-sort-item{
     height: 36px;
@@ -684,4 +689,83 @@
 .product_container:hover{
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-1px);
+}
+/* Footer */
+#footer{
+    border-top: 4px solid var(--third-color);
+}
+.footer-wrap{
+    margin: 20px 0;
+    justify-content: space-around;
+}
+.footer-heading{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.footer-icon{
+    font-size: 1.4rem;
+    padding-right: 3px;
+}
+.footer__qr{
+    display: flex;
+}
+.footer__qr-img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--border-color);
+}
+.footer-link{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 16px 0;
+}
+.footer__qr-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6px;
+}
+.footer__qr-app-link img{
+    display: block;
+    margin: 6px 0;
+    height: 20px;
+}
+.footer-link:hover{
+    color: var(--third-color);
+}
+.footer-policy{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    border-top: 1px solid var(--border-color);
+}
+.footer-policy-link{
+    display: block;
+    margin: 0 24px;
+    font-size: 1.3rem;
+}
+.footer-policy-list{
+    display: flex;
+}
+.footer-policy-list .blank::after{
+    top: 0;
+    border-color: var(--border-color);
+}
+.footer-policy-item{
+    position: relative;
+}
+.footer-company-name{
+    margin: 10px;
+}
+.footer-company-name p{
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.footer-company-info p{
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
 }
